@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="headervideo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content-overlay">
+            <div class="company-name">
+                <h1>RAD GROUP OF COMPANY</h1> <!-- Your company name -->
+                <button class="menu-btn" id="menu-btn">
+                  &#9776; <!-- Hamburger icon -->
+              </button>
+            </div>
+
+        
+
+            <h2>Welcome to My Onliner Store</h2>
+        </div>
+    </header>
+
+    <!-- Optional: Navigation menu that is toggled by the menu button -->
+<nav id="nav-menu" class="hidden">
+  <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <!-- Cart Icon Outside Header -->
+    <div class="cart-icon">
+        <button onclick="toggleCart()">🛒</button>
+    </div>
+
+    <!-- Cart Modal (Initially Hidden) -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-btn" onclick="closeCart()">×</span>
+            <h2>Your Cart</h2>
+            <p>Your cart is empty.</p>
+        </div>
+    </div>
+
+    <!-- Body Content Sections -->
+    <div class="body-content">
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are Rad Group, a leading provider of quality products for your everyday needs. Our mission is to offer the best shopping experience with high-quality and affordable products.</p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+<section id="products">
+  <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-list">
+          <!-- Example of a product card -->
+          <div class="product-card" data-name="Product 1" data-price="19.99">
+            <img src="pic1.jpg" alt="Product 1" class="product-img">
+            <h3 class="product-name">Product 1</h3>
+            <p class="product-description">This is a description of product 1.</p>
+            <p class="product-price">$19.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Product 1" data-price="19.99">
+          <img src="pic2.jpg" alt="Product 1" class="product-img">
+          <h3 class="product-name">Product 1</h3>
+          <p class="product-description">This is a description of product 1.</p>
+          <p class="product-price">$19.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+          <!-- Add more products here -->
+      </div>
+  </div>
+</section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
